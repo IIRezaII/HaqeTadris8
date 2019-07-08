@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HaqeTadris8</string>
+
+    <string name="Result"> </string>
+    <string name="Unit">واحد درس</string>
+    <string name="stuNumber">تعداد دانشجو</string>
+    <string name="button">=</string>
+    <string name="general">عمومی</string>
+    <string name="professional">تخصصی</string>
+    <string name="emptyUnitText">لطفا مقدار واحد را وارد کنید</string>
+    <string name="Master">ارشد</string>
+    <string name="General">عمومی</string>
+    <string name="associate">کارشناسی</string>
+    <string name="anounceResult">ضریب حق تدریس :</string>
+    <string name="Home">خانه</string>
+    <string name="PDF">PDF</string>
+    <string name="Calculation">محاسبه</string>
+    <string name="Share">اشتراک</string>
+    <string name="Person">Profile</string>
+
+
+</resources>

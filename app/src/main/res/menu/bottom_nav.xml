@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/home"
+            android:title="@string/Home"
+            android:icon="@drawable/ic_home"/>
+    <item
+            android:id="@+id/pdf"
+            android:title="@string/PDF"
+            android:icon="@drawable/ic_pdf"/>
+    <item
+            android:id="@+id/calculation"
+            android:title="@string/Calculation"
+            android:icon="@drawable/ic_calculation"/>
+    <item
+            android:id="@+id/person"
+            android:title="@string/Person"
+            android:icon="@drawable/ic_person"/>
+    <item
+            android:id="@+id/share"
+            android:title="@string/Share"
+            android:icon="@drawable/ic_share"/>
+
+</menu>
