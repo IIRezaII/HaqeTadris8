@@ -41,35 +41,35 @@ class CalculateFragment : Fragment() {
 
 
 
-        view.button.setOnClickListener {view ->
+        view.button.setOnClickListener {
 
-            val stuNumText = view.findViewById<EditText>(R.id.tvStuNumber).getText().toString().toInt()
-            val unitText = view.findViewById<EditText>(R.id.tvUnit).getText().toString().toInt()
+            if (view.tvStuNumber.text.isNullOrEmpty() || view.tvUnit.text.isNullOrEmpty()) {
 
-            val radioProCheck: RadioButton = view.findViewById(R.id.proRadio)
-            val radioGenCheck: RadioButton = view.findViewById(R.id.genRadio)
+                Toast.makeText(activity, R.string.emptyUnitText, Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
 
-
-            if (tvStuNumber.text.isEmpty() || tvUnit.text.isEmpty()) {
-
-                Toast.makeText(getActivity(), R.string.emptyUnitText, Toast.LENGTH_SHORT).show()
             }
 
 
-            if (radioProCheck.isChecked) {
+            val stuNumText = view.tvStuNumber.text.toString().toInt()
+            val unitText = view.tvUnit.text.toString().toInt()
+
+
+            if (view.proRadio.isChecked) {
 
                 val finalValue: Double = StartFunction().associatesStart(stuNumText, unitText)
                 view.findViewById<TextView>(R.id.tvResult).text = finalValue.toString()
 
             }
 
-            if (radioGenCheck.isChecked) {
+            if (view.genRadio.isChecked) {
 
                 val finalValue: Double = StartFunction().generalStart(stuNumText, unitText)
                 view.findViewById<TextView>(R.id.tvResult).text = finalValue.toString()
-            }
-        }
 
+            }
+
+        }
 
         return view
     }

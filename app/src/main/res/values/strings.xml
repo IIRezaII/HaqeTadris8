@@ -11,12 +11,14 @@
     <string name="Master">ارشد</string>
     <string name="General">عمومی</string>
     <string name="associate">کارشناسی</string>
-    <string name="anounceResult">ضریب حق تدریس :</string>
+    <string name="anounceResult">ضریب حق تدریس </string>
     <string name="Home">خانه</string>
     <string name="PDF">PDF</string>
     <string name="Calculation">محاسبه</string>
     <string name="Share">اشتراک</string>
     <string name="Person">Profile</string>
+    <string name="CourseName">نام درس</string>
+    <string name="HomeTextTitle">گزارش ضرایب محاسبه شده</string>
 
 
 </resources>

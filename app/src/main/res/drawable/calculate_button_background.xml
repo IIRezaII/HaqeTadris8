@@ -6,14 +6,15 @@
                 android:useLevel="false"
                 android:thickness="3dp">
 
-            <solid   android:color="@color/colorPrimary"/>
+            <solid   android:color="@color/red_active"/>
+            <gradient
+                    android:startColor="@color/colorAccent"
+                    android:centerColor="@color/red_active"
+                    android:endColor="@color/colorAccent"/>
+
             <size    android:width="130dp"
                      android:height="30dp"/>
             <corners android:radius="700dp"/>
-            <gradient
-                    android:startColor="@color/blue_grey_bg_light"
-                    android:centerColor="@color/red_bg_light"
-                    android:endColor="@color/blue_grey_bg_light"/>
 
 
         </shape>
