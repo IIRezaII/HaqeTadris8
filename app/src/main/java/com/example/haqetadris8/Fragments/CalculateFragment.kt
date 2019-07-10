@@ -1,24 +1,17 @@
 package com.example.haqetadris8.Fragments
 
 
-import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
-import com.example.haqetadris8.MainActivity
 
 import com.example.haqetadris8.R
 import com.example.haqetadris8.StartFunction
-import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.activity_main.view.*
-import kotlinx.android.synthetic.main.fragment_calculate.*
 import kotlinx.android.synthetic.main.fragment_calculate.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -69,11 +62,38 @@ class CalculateFragment : Fragment() {
 
             }
 
+            val pdfFrag = PdfFragment()
+
+            val bundle = Bundle()
+            bundle.putString("courseName", view.findViewById<EditText>(R.id.tvCourseName).text.toString())
+            pdfFrag.arguments = bundle
+            val bundle2 = Bundle()
+            bundle2.putString("stuNum", view.findViewById<EditText>(R.id.tvStuNumber).text.toString())
+            pdfFrag.arguments = bundle
+            val bundle3 = Bundle()
+            bundle3.putString("unit", view.findViewById<EditText>(R.id.tvUnit).text.toString())
+            pdfFrag.arguments = bundle
+            val bundle4 = Bundle()
+            bundle4.putString("result", view.findViewById<TextView>(R.id.tvResult).text.toString())
+            pdfFrag.arguments = bundle
+
+
         }
 
         return view
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
